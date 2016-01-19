@@ -11,7 +11,7 @@ class Members implements Countable
 
     public function __construct(array $members)
     {
-        $this->members = array_map(function ($item) {
+        $this->members = array_map(function($item) {
             return new Member($item);
         }, $members);
     }
@@ -58,7 +58,7 @@ class Members implements Countable
      */
     public function getByRole($role)
     {
-        return array_filter($this->getMembers(), function ($member) use ($role) {
+        return array_filter($this->getMembers(), function($member) use ($role) {
             return $member->role() === $role;
         });
     }
