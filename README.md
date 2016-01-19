@@ -1,6 +1,7 @@
 # Clash of Clans API
 
 [![Build Status](https://travis-ci.org/toniperic/php-clash-of-clans.svg?branch=master)](https://travis-ci.org/toniperic/php-clash-of-clans)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/toniperic/php-clash-of-clans/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/toniperic/php-clash-of-clans/?branch=master)
 
 Easily query Supercell's API for live Clash of Clans data! Uses same source as used on official clashofclans.com website.
 
