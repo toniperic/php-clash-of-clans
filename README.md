@@ -2,12 +2,16 @@
 
 [![Build Status](https://travis-ci.org/toniperic/php-clash-of-clans.svg?branch=master)](https://travis-ci.org/toniperic/php-clash-of-clans)
 
-Easily query Supercell's API for live Clash of Clans data! Uses same source as used on official clashofclans.com website. This package is tested and working on PHP 5.4 and greater, including PHP 7.0!
+Easily query Supercell's API for live Clash of Clans data! Uses same source as used on official clashofclans.com website.
+
+**This package is tested and working on PHP 5.4 and greater, including PHP 7.0!**
+
+Do note that the API might change at any given moment, as there are no stable releases yet.
 
 ## Installation
 ### Using Composer
 ```
-composer require toniperic/php-clash-of-clans
+composer require toniperic/php-clash-of-clans=dev-master
 ```
 
 ## Usage
