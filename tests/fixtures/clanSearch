@@ -1,0 +1,23 @@
+
+-
+    request:
+        method: GET
+        url: 'https://set7z18fgf.execute-api.us-east-1.amazonaws.com/prod/?route=getClanSearch&name=Hattrickers'
+        headers:
+            Host: set7z18fgf.execute-api.us-east-1.amazonaws.com
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Content-Type: application/json
+            Content-Length: '840'
+            Connection: keep-alive
+            Date: 'Mon, 18 Jan 2016 23:56:50 GMT'
+            Access-Control-Allow-Origin: '*'
+            x-amzn-RequestId: 24194182-be3f-11e5-a42b-aff6caf9dd13
+            X-Cache: 'Miss from cloudfront'
+            Via: '1.1 15dc054be0b60d0bb5433da7ebce7096.cloudfront.net (CloudFront)'
+            X-Amz-Cf-Id: K3t1X7A2p_sUKaMG_xc2S3pV0VyQiCcggxhNLEEbOE0OTUw-yP5VGQ==
+        body: '{"clanSearch":{"results":[{"tag":"#2VP0J0VV","name":"Hattrickers","type":"inviteOnly","locationName":"Croatia","clanBadgeImg":{"s":"https://api-assets.clashofclans.com/badges/70/WwqswX7EyvZR0lqRtOMrT7rV2QkaAgXeixA9w-UnOSo.png, https://api-assets.clashofclans.com/badges/200/WwqswX7EyvZR0lqRtOMrT7rV2QkaAgXeixA9w-UnOSo.png 2x","m":"https://api-assets.clashofclans.com/badges/200/WwqswX7EyvZR0lqRtOMrT7rV2QkaAgXeixA9w-UnOSo.png, https://api-assets.clashofclans.com/badges/200/WwqswX7EyvZR0lqRtOMrT7rV2QkaAgXeixA9w-UnOSo.png 2x","l":"https://api-assets.clashofclans.com/badges/200/WwqswX7EyvZR0lqRtOMrT7rV2QkaAgXeixA9w-UnOSo.png","xl":"https://api-assets.clashofclans.com/badges/200/WwqswX7EyvZR0lqRtOMrT7rV2QkaAgXeixA9w-UnOSo.png"},"warFrequency":"always","clanLevel":8,"clanPoints":22094,"warWins":169,"requiredTrophies":800,"members":35}]}}'

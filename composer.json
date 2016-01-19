@@ -1,0 +1,24 @@
+{
+    "name": "toniperic/php-clash-of-clans",
+    "description": "PHP wrapper for querying the Supercell Clash of Clans API",
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "php-vcr/php-vcr": "^1.2",
+        "php-vcr/phpunit-testlistener-vcr": "^1.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Toni Peric",
+            "email": "toni.peric@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ToniPeric\\Clash\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.4"
+    }
+}
