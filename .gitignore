@@ -2,3 +2,6 @@
 composer.lock
 coverage/
 vendor/
+tests/ClientTest.php
+tests/fixtures
+index.php

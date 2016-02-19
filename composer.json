@@ -15,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "ToniPeric\\Clash\\": "src"
+            "ClashOfClans\\": "src"
         }
     },
     "require": {
