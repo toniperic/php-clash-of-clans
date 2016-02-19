@@ -7,7 +7,7 @@ Easily query Supercell's API for Clash of Clans data!
 This package uses official API. For more information, please visit [https://developers.clashofclans.com](https://developers.clashofclans.com)
 
 
-**This package is tested and working on PHP 5.4 and greater, including PHP 7.0!**
+**This package is tested and working on PHP 5.5 and greater, including PHP 7.0!**
 
 Do note that the API might change at any given moment, as there are no stable releases yet.
 
