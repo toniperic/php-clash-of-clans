@@ -12,7 +12,7 @@ This package uses official API. For more information, please visit [https://deve
 Do note that the API might change at any given moment, as there are no stable releases yet.
 
 ## Requirements
-For using this package, you need to obtain an API key at [https://developers.clashofclans.com](https://developers.clashofclans.com)
+For using this package, you need to obtain an API key at [https://developer.clashofclans.com](https://developer.clashofclans.com)
 
 ## Installation
 ### Using Composer
