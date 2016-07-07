@@ -1,8 +1,6 @@
 <?php
 
-
 namespace ClashOfClans\Api\Location;
-
 
 use ClashOfClans\Api\AbstractResource;
 
@@ -14,4 +12,5 @@ use ClashOfClans\Api\AbstractResource;
  */
 class Location extends AbstractResource
 {
+
 }

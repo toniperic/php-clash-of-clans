@@ -1,15 +1,15 @@
 <?php
 
-
 namespace ClashOfClans\Api;
-
 
 use ClashOfClans\Api\Clan\Clan;
 use ClashOfClans\Api\Location\Location;
 
 abstract class AbstractResource
 {
+
     protected $data = [];
+
     protected $casts = [
         'location' => Location::class
     ];
@@ -83,8 +83,7 @@ abstract class AbstractResource
 
     protected function get($key = null)
     {
-        if($key === null)
-        {
+        if ($key === null) {
             return $this->data;
         }
 
@@ -93,8 +92,7 @@ abstract class AbstractResource
 
     public function __call($name, $arguments)
     {
-        if($data = $this->get($name))
-        {
+        if ($data = $this->get($name)) {
             return $data;
         }
     }

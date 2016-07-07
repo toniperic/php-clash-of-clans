@@ -1,8 +1,6 @@
 <?php
 
-
 namespace ClashOfClans\Api\League;
-
 
 use ClashOfClans\Api\AbstractResource;
 
