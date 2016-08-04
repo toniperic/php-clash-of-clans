@@ -1,13 +1,12 @@
 <?php
 
-
 namespace ClashOfClans\Api\Clan;
-
 
 use ClashOfClans\Api\AbstractResource;
 
 class MemberList extends AbstractResource
 {
+
     protected $casts = [
         'all' => Player::class
     ];
@@ -43,7 +42,7 @@ class MemberList extends AbstractResource
     {
         $members = $this->all();
 
-        return array_filter($members, function($player){
+        return array_filter($members, function ($player) {
             return $player->isLeader();
         })[0];
     }
@@ -55,7 +54,7 @@ class MemberList extends AbstractResource
     {
         $members = $this->all();
 
-        return array_filter($members, function($player){
+        return array_filter($members, function ($player) {
             return $player->isElder();
         });
     }
@@ -67,7 +66,7 @@ class MemberList extends AbstractResource
     {
         $members = $this->all();
 
-        return array_filter($members, function($player){
+        return array_filter($members, function ($player) {
             return $player->isCoLeader();
         });
     }
