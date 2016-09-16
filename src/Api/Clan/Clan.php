@@ -1,8 +1,6 @@
 <?php
 
-
 namespace ClashOfClans\Api\Clan;
-
 
 use ClashOfClans\Api\AbstractResource;
 use ClashOfClans\Api\Location\Location;
@@ -20,7 +18,6 @@ use ClashOfClans\Api\Location\Location;
  * @method int rank()
  * @method int previousRank()
  */
-
 class Clan extends AbstractResource
 {
 

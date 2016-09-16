@@ -1,8 +1,6 @@
 <?php
 
-
 namespace ClashOfClans\Api\League;
-
 
 use ClashOfClans\Api\AbstractResource;
 
@@ -12,6 +10,7 @@ use ClashOfClans\Api\AbstractResource;
  */
 class League extends AbstractResource
 {
+
     protected $casts = [
         'iconUrls' => Icon::class
     ];

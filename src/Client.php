@@ -1,6 +1,5 @@
 <?php
 
-
 namespace ClashOfClans;
 
 use ClashOfClans\Api\Clan\Clan;
@@ -14,6 +13,7 @@ use GuzzleHttp\ClientInterface;
 
 class Client
 {
+
     protected $httpClient;
 
     protected $token;
@@ -49,7 +49,7 @@ class Client
 
         $response = $this->request('clans?' . http_build_query($params));
 
-        return array_map(function($item){
+        return array_map(function ($item) {
             return Clan::makeFromArray($item);
         }, $response['items']);
     }
@@ -71,7 +71,7 @@ class Client
      */
     public function getLocations()
     {
-        return array_map(function($item){
+        return array_map(function ($item) {
             return Location::makeFromArray($item);
         }, $this->request('locations')['items']);
     }
@@ -86,13 +86,13 @@ class Client
     {
         $url = 'locations/' . $locationId . '/rankings/' . $rankingId;
 
-        if($rankingId == 'clans'){
-            return array_map(function($item){
+        if ($rankingId == 'clans') {
+            return array_map(function ($item) {
                 return Clan::makeFromArray($item);
             }, $this->request($url)['items']);
         }
 
-        return array_map(function($item){
+        return array_map(function ($item) {
             return Player::makeFromArray($item);
         }, $this->request($url)['items']);
     }
@@ -104,7 +104,7 @@ class Client
      */
     public function getLeagues()
     {
-        return array_map(function($item){
+        return array_map(function ($item) {
             return League::makeFromArray($item);
         }, $this->request('leagues')['items']);
     }
@@ -126,8 +126,7 @@ class Client
      */
     public function getHttpClient()
     {
-        if($this->httpClient === null)
-        {
+        if ($this->httpClient === null) {
             $this->httpClient = new GuzzleClient(['base_uri' => 'https://api.clashofclans.com/v1/']);
         }
 

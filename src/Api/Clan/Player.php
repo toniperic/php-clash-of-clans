@@ -1,8 +1,6 @@
 <?php
 
-
 namespace ClashOfClans\Api\Clan;
-
 
 use ClashOfClans\Api\AbstractResource;
 use ClashOfClans\Api\League\League;
@@ -21,6 +19,7 @@ use ClashOfClans\Api\League\League;
  */
 class Player extends AbstractResource
 {
+
     protected $casts = [
         'league' => League::class,
         'clan' => Clan::class
