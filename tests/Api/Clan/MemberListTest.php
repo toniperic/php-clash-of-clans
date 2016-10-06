@@ -12,8 +12,8 @@ class MemberListTest extends PHPUnit_Framework_TestCase
     public function setUp()
     {
         $this->memberList = MemberList::makeFromArray([
-            ['name' => 'VanSilent'],
-            ['name' => 'Reek'],
+            ['name' => 'VanSilent', 'role' => 'member'],
+            ['name' => 'Reek', 'role' => 'leader'],
         ]);
     }
 
@@ -30,5 +30,12 @@ class MemberListTest extends PHPUnit_Framework_TestCase
         $player = $this->memberList->nth(1);
 
         $this->assertEquals('Reek', $player->name());
+    }
+
+    public function testReturnsLeader()
+    {
+        $leader = $this->memberList->leader();
+
+        $this->assertEquals('Reek', $leader->name());
     }
 }

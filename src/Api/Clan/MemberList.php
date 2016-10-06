@@ -42,7 +42,7 @@ class MemberList extends AbstractResource
     {
         $members = $this->all();
 
-        return current(array_filter($members, function($player){
+        return current(array_filter($members, function($player) {
             return $player->isLeader();
         }));
     }
