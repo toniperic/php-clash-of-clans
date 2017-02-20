@@ -64,7 +64,11 @@ class Client
     public function getClanWarLog($tag)
     {
         $response = $this->request('clans/' . urlencode($tag).'/warlog');
-        return WarLog::makeFromArray($response);
+        
+        return array_map(function ($item) {
+            return WarLog::makeFromArray($item);
+        }, $response['items']);
+
     }
 
     /**
