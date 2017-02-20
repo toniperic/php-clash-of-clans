@@ -1,7 +1,10 @@
 
+<?php
+
 namespace ClashOfClans\Api\WarLog;
 
 use ClashOfClans\Api\AbstractResource;
+use ClashOfClans\Api\Clan\Badge;
 
 /**
  * @method string name()
@@ -26,3 +29,5 @@ class WarClan extends AbstractResource
     }
    
 }
+
+?>
