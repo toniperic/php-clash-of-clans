@@ -4,6 +4,7 @@ namespace ClashOfClans;
 
 use ClashOfClans\Api\Clan\Clan;
 use ClashOfClans\Api\Clan\Player;
+use ClashOfClans\Api\WarLog\WarLog;
 use ClashOfClans\Api\League\League;
 use ClashOfClans\Api\Location\Location;
 use ClashOfClans\Api\Location\LocationList;
@@ -52,6 +53,18 @@ class Client
         return array_map(function ($item) {
             return Clan::makeFromArray($item);
         }, $response['items']);
+    }
+    
+    /**
+     * Get warlog for specific clan
+     * 
+     * @param string $tag
+     * @return WarLog
+     */
+    public function getClanWarLog($tag)
+    {
+        $response = $this->request('clans/' . urlencode($tag).'/warlog');
+        return WarLog::makeFromArray($response);
     }
 
     /**
