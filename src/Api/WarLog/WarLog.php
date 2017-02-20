@@ -1,7 +1,8 @@
 <?php
 
-namespace ClashOfClans\Api\WarLog\WarClan;
+namespace ClashOfClans\Api\WarLog;
 
+use ClashOfClans\Api\WarLog\WarClan;
 use ClashOfClans\Api\AbstractResource;
 
 /**
