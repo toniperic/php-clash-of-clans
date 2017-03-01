@@ -9,6 +9,7 @@ use ClashOfClans\Api\League\League;
 use ClashOfClans\Api\Location\Location;
 use ClashOfClans\Api\Location\LocationList;
 use ClashOfClans\Api\ResponseMediator;
+use ClashOfClans\Api\Player\Player as FullPlayer;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\ClientInterface;
 
@@ -69,6 +70,19 @@ class Client
             return WarLog::makeFromArray($item);
         }, $response['items']);
 
+    }
+    
+    /**
+     * Get player info for specific tag
+     * 
+     * @param string $tag
+     * @return PlayerInfo
+     */
+    public function getPlayer($tag)
+    {
+        $response = $this->request('players/' . urlencode($tag));
+        
+        return FullPlayer::makeFromArray($response);
     }
 
     /**
