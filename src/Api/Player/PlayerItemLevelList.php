@@ -18,10 +18,10 @@ class PlayerItemLevelList extends AbstractResource
 	];
 	
 	/**
-     * @return array
-     */
-    public function all()
-    {
-        return $this->get();
-    }
+	* @return array
+	*/
+	public function all()
+	{
+		return $this->get();
+	}
 }
