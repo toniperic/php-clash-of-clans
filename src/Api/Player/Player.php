@@ -29,13 +29,13 @@ use ClashOfClans\Api\Clan\Clan;
  
 class Player extends AbstractResource
 {
-	protected $casts = [
-		'league' => League::class,
-		'clan' => Clan::class,
-		'spells' => PlayerItemLevelList::class,
-		'heroes' => PlayerItemLevelList::class,
-		'troops' => PlayerItemLevelList::class,
-		'achievements' => AchievementList::class
-    	];
+    protected $casts = [
+        'league' => League::class,
+        'clan' => Clan::class,
+        'spells' => PlayerItemLevelList::class,
+        'heroes' => PlayerItemLevelList::class,
+        'troops' => PlayerItemLevelList::class,
+        'achievements' => AchievementList::class
+    ];
 }
 
