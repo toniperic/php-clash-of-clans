@@ -25,39 +25,17 @@ use ClashOfClans\Api\Clan\Clan;
  * @method PlayerItemLevelList troops()
  * @method PlayerItemLevelList heroes()
  * @method PlayerItemLevelList spells()
-
  */
-/*
-  "legendStatistics": {
-    "legendTrophies": 0,
-    "currentSeason": {
-      "rank": 0,
-      "trophies": 0,
-      "id": "string"
-    },
-    "previousSeason": {
-      "rank": 0,
-      "trophies": 0,
-      "id": "string"
-    },
-    "bestSeason": {
-      "rank": 0,
-      "trophies": 0,
-      "id": "string"
-    }
-  },
-  */
  
 class Player extends AbstractResource
 {
-    protected $casts = [
-        'league' => League::class,
-        'clan' => Clan::class,
-        'spells' => PlayerItemLevelList::class,
-        'heroes' => PlayerItemLevelList::class,
-        'troops' => PlayerItemLevelList::class,
+	protected $casts = [
+		'league' => League::class,
+		'clan' => Clan::class,
+		'spells' => PlayerItemLevelList::class,
+		'heroes' => PlayerItemLevelList::class,
+		'troops' => PlayerItemLevelList::class,
 		'achievements' => AchievementList::class
-    ];
-    
+    	];
 }
 
