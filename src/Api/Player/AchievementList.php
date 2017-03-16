@@ -9,15 +9,15 @@ use ClashOfClans\Api\AbstractResource;
  */
 class AchievementList extends AbstractResource
 {
-	protected $casts = [
-		'all' => Achievement::class
-	];
+    protected $casts = [
+        'all' => Achievement::class
+    ];
 	
-	/**
-	* @return array
-	*/
-	public function all()
-	{
-		return $this->get();
-	}
+    /**
+    * @return array
+    */
+    public function all()
+    {
+        return $this->get();
+    }
 }
