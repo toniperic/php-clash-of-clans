@@ -13,15 +13,15 @@ use ClashOfClans\Api\AbstractResource;
  */
 class PlayerItemLevelList extends AbstractResource
 {
-	protected $casts = [
-		'all' => PlayerItemLevel::class
-	];
+    protected $casts = [
+        'all' => PlayerItemLevel::class
+    ];
 	
-	/**
-	* @return array
-	*/
-	public function all()
-	{
-		return $this->get();
-	}
+    /**
+    * @return array
+    */
+    public function all()
+    {
+        return $this->get();
+    }
 }
