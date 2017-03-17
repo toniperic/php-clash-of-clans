@@ -4,9 +4,6 @@ namespace ClashOfClans\Api\Player;
 
 use ClashOfClans\Api\AbstractResource;
 
-/**
-
- */
 class AchievementList extends AbstractResource
 {
     protected $casts = [
